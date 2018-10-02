@@ -1,0 +1,10 @@
+CREATE TABLE employee(employee_id int(10) NOT NULL AUTO_INCREMENT primary key, name varchar(150) NOT NULL, mobile varchar(50) NOT NULL, address varchar(200) NOT NULL, email varchar(50) NOT NULL, username varchar(50) NOT NULL, created_dttm timestamp DEFAULT CURRENT_TIMESTAMP, updated_dttm timestamp);
+
+
+CREATE TABLE employee(employee_id int(10) NOT NULL AUTO_INCREMENT primary key, name varchar(150) NOT NULL, mobile varchar(50) NOT NULL, address varchar(200) NOT NULL, created_dttm timestamp DEFAULT CURRENT_TIMESTAMP, updated_dttm timestamp);
+insert into employee(name, mobile, address) values('Nagaraju','123456789','Hyderabad');
+
+CREATE TABLE user(name varchar(150) NOT NULL,  email varchar(50) NOT NULL, username varchar(50) NOT NULL primary key, password varchar(50) NOT NULL, created_dttm timestamp DEFAULT CURRENT_TIMESTAMP, updated_dttm timestamp);
+
+insert into registeremployee(name, email, username,password) values('Nagaraju','naga','Nagaraju', 'test');
+
